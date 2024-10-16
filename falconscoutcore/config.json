@@ -1,0 +1,57 @@
+{
+    "data_config": {
+        "delimiter": "|",
+        "quantitative_data_labels": [
+            "ScoutId",
+            "MatchKey",
+            "Alliance",
+            "DriverStation",
+            "TeamNumber",
+            "AutoSpeaker",
+            "AutoAmp",
+            "AutoLeave",
+            "AutoCenterline",
+            "AutoNotes",
+            "TeleopSpeaker",
+            "TeleopAmp",
+            "TeleopTrap",
+            "TeleopPassing",
+            "TeleopNotes",
+            "Parked",
+            "ClimbStatus",
+            "Harmonized",
+            "ClimbSpeed",
+            "EndgameNotes",
+            "Disabled",
+            "DriverRating",
+            "DefenseTime",
+            "DefenseSkill",
+            "CounterDefenseSkill",
+            "RatingNotes"
+        ],
+        "qualitative_data_labels": [
+            "ScoutId",
+            "MatchKey",
+            "Alliance",
+            "DriverStation",
+            "TeamNumber",
+            "AutoDrivingSkills",
+            "AutoGeneralNotes",
+            "TeleopIntakeLocation",
+            "SpeakerAccuracy",
+            "AmpAccuracy",
+            "AligningSpeed",
+            "ScoringSpeed",
+            "IntakingSpeed",
+            "EndgameGeneralNotes"
+        ],
+        "json_file": "./data/2024cur_match_data.json",
+        "qualitative_json_file": "./data/2024cur_qualitative_data.json",
+        "error_json": "./data/errors.json"
+    },
+    "repo_config": {
+        "repo": "Robohawks-346-Programming/346_2024_ScoutingData",
+        "update_json": "test.json",
+        "update_qualitative_json": "2024cur_qualitative_data.json"
+    }
+}

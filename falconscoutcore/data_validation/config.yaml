@@ -1,0 +1,41 @@
+# core setup features
+year: 2024
+event_code: "mdowi"
+run_with_tba: false
+path_to_data: "data/2024cur_match_data.json"
+path_to_output: "data/errors.json"
+
+# required translation
+scout_id: "ScoutId"
+match_key: "MatchKey"
+team_number: "TeamNumber"
+alliance: "Alliance"
+driver_station": "DriverStation"
+
+# optional parameters - if it is needed for a data check and is
+# not listed, the check will not run
+
+# Crescendo 2024: hyper-specific parameters
+auto_speaker: "AutoSpeaker"
+auto_amp: "AutoAmp"
+auto_leave: "AutoLeave"
+auto_centerline: "AutoCenterline"
+teleop_speaker: "TeleopSpeaker"
+teleop_amp: "TeleopAmp"
+teleop_trap: "TeleopTrap"
+teleop_passing: "TeleopPassing"
+parked: "Parked"
+climbed: "ClimbStatus"
+harmonized: "Harmonized"
+climb_speed: "ClimbSpeed"
+disabled: "Disabled"
+driver_rating: "DriverRating"
+defense_time: "DefenseTime"
+defense_skill: "DefenseSkill"
+counter_defense_skill: "CounterDefenseSkill"
+
+# parameters for notes
+auto_notes: "AutoNotes"
+teleop_notes: "TeleopNotes"
+endgame_notes: "EndgameNotes"
+rating_notes: "RatingNotes"
