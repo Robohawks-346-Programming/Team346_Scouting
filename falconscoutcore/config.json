@@ -45,7 +45,7 @@
             "IntakingSpeed",
             "EndgameGeneralNotes"
         ],
-        "json_file": "./data/2024cur_match_data.json",
+        "json_file": "./data/test.json",
         "qualitative_json_file": "./data/2024cur_qualitative_data.json",
         "error_json": "./data/errors.json"
     },
