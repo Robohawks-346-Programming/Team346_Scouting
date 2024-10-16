@@ -292,7 +292,7 @@ def display_data() -> None:
     if not note_scouting_df[
         ~note_scouting_df.apply(tuple, 1).isin(resultant_quali_df.apply(tuple, 1))
     ].empty:
-        status_message_col.success("Note scouting data changed successfully!", icon="✅")
+        status_message_col.success("Pit scouting data changed successfully!", icon="✅")
         resultant_quali_df.to_json(
             CONFIG["data_config"]["qualitative_json_file"], orient="records", indent=2
         )
