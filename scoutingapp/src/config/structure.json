@@ -304,62 +304,32 @@
         "components": [
             {
                 "type": "GenericHeaderOne",
-                "text": "2024 Note Scouting App"
+                "text": "2024 Pit Scouting App"
             },
             {
                 "type": "GenericHeaderTwo",
-                "text": "Match Info"
+                "text": "Bot Info"
             },
             {
                 "type": "GenericTextInput",
-                "text": "Scout Name",
+                "text": "Name",
                 "placeholder": [
-                    "Pranav"
+                    "karti"
                 ],
                 "required": true,
                 "id": "ScoutId"
             },
             {
                 "type": "DropdownTextInput",
-                "text": "Match Key",
-                "options": [
-                    "qm",
-                    "qf",
-                    "sf",
-                    "f"
-                ],
-                "placeholder": [
-                    "number"
-                ],
-                "required": true,
+                "text": "Don't put anything here",
+                "required": false,
                 "id": "MatchKey"
-            },
-            {
-                "type": "GenericRadioSelect",
-                "text": "Alliance",
-                "options": [
-                    "red",
-                    "blue"
-                ],
-                "required": true,
-                "id": "Alliance"
-            },
-            {
-                "type": "GenericDropdown",
-                "text": "Driver Station",
-                "options": [
-                    "1",
-                    "2",
-                    "3"
-                ],
-                "required": true,
-                "id": "DriverStation"
             },
             {
                 "type": "GenericTextInput",
                 "text": "Team Number",
                 "placeholder": [
-                    "9999"
+                    "346"
                 ],
                 "required": true,
                 "id": "TeamNumber"
@@ -368,48 +338,54 @@
                 "type": "Spacing"
             },
             {
-                "type": "GenericHeaderTwo",
-                "text": "General Notes"
+                "type" : "GenericDropdown",
+                "text" : "Drivetrain",
+                "options" : [
+                    "Swerve", 
+                    "Mecanum",
+                    "Tank"
+                ],
+                "id" : "DriveType"
             },
             {
-                "type": "GenericToggle",
-                "text": "Did they run into obstacles while driving autonomously?",
-                "id": "AutoDrivingSkills"
-            },
-            {
-                "type": "GenericTextArea",
-                "text": "Auto General Notes",
-                "id": "AutoGeneralNotes"
+                "type": "GenericTextInput",
+                "text": "Swerve module", 
+                "id": "ModuleType"
             },
             {
                 "type": "GenericDropdown",
-                "text": "Where are they mostly intaking from?",
+                "text": "Intake type",
                 "options": [
-                    "-",
-                    "Source",
-                    "Ground"
+                    "OTB",
+                    "UTB",
+                    "Source"
                 ],
-                "id": "TeleopIntakeLocation"
-            },
-            {
-                "type": "GenericTextArea",
-                "text": "Teleop General Notes",
-                "id": "TeleopGeneralNotes"
+                "id": "Intake"
             },
             {
                 "type": "GenericDropdown",
-                "text": "Climb Alignment Speed",
+                "text": "Shooter", 
                 "options": [
-                    "-",
-                    "Slow: Took at least 5 seconds to climb on chain",
-                    "Fast: Took at most 5 seconds to climb on chain"
+                    "Fixed", 
+                    "Pivoting Arm", 
+                    "Elevator"
                 ],
-                "id": "ClimbAlignmentSpeed"
+                "id": "Shooter"
+            },
+            {
+                "type": "GenericTextInput",
+                "text": "Climber",
+                "id": "Climber"
+            },
+            {
+                "type": "GenericToggle", 
+                "text": "Can they trap?",
+                "id": "Trap"
             },
             {
                 "type": "GenericTextArea",
-                "text": "Endgame General Notes",
-                "id": "EndgameGeneralNotes"
+                "text": "Notes",
+                "id": "Notes"
             },
             {
                 "type": "DarkButton",
@@ -421,16 +397,14 @@
             "delimiter": "|",
             "order": [
                 "ScoutId",
-                "MatchKey",
-                "Alliance",
-                "DriverStation",
                 "TeamNumber",
-                "AutoDrivingSkills",
-                "AutoGeneralNotes",
-                "TeleopIntakeLocation",
-                "TeleopGeneralNotes",
-                "ClimbAlignmentSpeed",
-                "EndgameGeneralNotes"
+                "DriveType",
+                "ModuleType",
+                "Intake",
+                "Shooter",
+                "Climber",
+                "Trap",
+                "Notes"
             ]
         }
     }

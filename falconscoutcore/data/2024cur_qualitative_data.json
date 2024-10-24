@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "ScoutId": "Kush",
+    "TeamNumber": 346,
+    "DriveType": "Swerve",
+    "ModuleType": "MK4",
+    "Intake": "UTB",
+    "Shooter": "Pivoting Arm",
+    "Climber": "",
+    "Trap": false,
+    "Notes": ""
+  }
+]
