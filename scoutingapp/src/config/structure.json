@@ -1,11 +1,11 @@
 [
     {
-        "name": "2024 Scouting App",
+        "name": "2025 Scouting App",
         "description": "Team 346: Scouting App",
         "components": [
             {
                 "type": "GenericHeaderOne",
-                "text": "2024 Scouting App"
+                "text": "2025 Scouting App"
             },
             {
                 "type": "GenericHeaderTwo",
@@ -14,54 +14,36 @@
             {
                 "type": "GenericTextInput",
                 "text": "Scout Name",
-                "placeholder": [
-                    "karti"
-                ],
+                "placeholder": ["karti"],
                 "id": "ScoutId",
                 "required": true
             },
             {
                 "type": "DropdownTextInput",
                 "text": "Match Key",
-                "options": [
-                    "qm",
-                    "qf",
-                    "sf",
-                    "f"
-                ],
-                "placeholder": [
-                    "number"
-                ],
+                "options": ["qm", "qf", "sf", "f"],
+                "placeholder": ["number"],
                 "required": true,
                 "id": "MatchKey"
             },
             {
                 "type": "GenericRadioSelect",
                 "text": "Alliance",
-                "options": [
-                    "red",
-                    "blue"
-                ],
+                "options": ["red", "blue"],
                 "id": "Alliance",
                 "required": true
             },
             {
                 "type": "GenericDropdown",
                 "text": "Driver Station",
-                "options": [
-                    "1",
-                    "2",
-                    "3"
-                ],
+                "options": ["1", "2", "3"],
                 "id": "DriverStation",
                 "required": true
             },
             {
                 "type": "GenericTextInput",
                 "text": "Team Number",
-                "placeholder": [
-                    "346"
-                ],
+                "placeholder": ["346"],
                 "id": "TeamNumber",
                 "required": true
             },
@@ -74,34 +56,44 @@
             },
             {
                 "type": "IncrementNumberInput",
-                "text": "Auto Speaker Cycles",
-                "placeholder": [
-                    "0"
-                ],
-                "id": "AutoSpeaker"
+                "text": "Auto Coral L1",
+                "placeholder": ["0"],
+                "id": "AutoCoralL1"
             },
             {
                 "type": "IncrementNumberInput",
-                "text": "Auto Amp Cycles",
-                "placeholder": [
-                    "0"
-                ],
-                "id": "AutoAmp"
+                "text": "Auto Coral L2",
+                "placeholder": ["0"],
+                "id": "AutoCoralL2"
+            },
+            {
+                "type": "IncrementNumberInput",
+                "text": "Auto Coral L3",
+                "placeholder": ["0"],
+                "id": "AutoCoralL3"
+            },
+            {
+                "type": "IncrementNumberInput",
+                "text": "Auto Coral L4",
+                "placeholder": ["0"],
+                "id": "AutoCoralL4"
+            },
+            {
+                "type": "IncrementNumberInput",
+                "text": "Auto Processor",
+                "placeholder": ["0"],
+                "id": "AutoProcessor"
+            },
+            {
+                "type": "IncrementNumberInput",
+                "text": "Auto Net",
+                "placeholder": ["0"],
+                "id": "AutoNet"
             },
             {
                 "type": "GenericToggle",
-                "text": "Did they intake from the centerline during auto?",
-                "id": "AutoCenterline"
-            },
-            {
-                "type": "GenericToggle",
-                "text": "Did they leave the starting zone (white line)?",
+                "text": "Did they leave the starting zone (Black line)?",
                 "id": "AutoLeave"
-            },
-            {
-                "type": "GenericTextArea",
-                "text": "Auto Notes",
-                "id": "AutoNotes"
             },
             {
                 "type": "Spacing"
@@ -112,52 +104,38 @@
             },
             {
                 "type": "IncrementNumberInput",
-                "text": "Teleop Speaker Cycles",
-                "placeholder": [
-                    "0"
-                ],
-                "options": [
-                    "red"
-                ],
-                "id": "TeleopSpeaker"
+                "text": "Teleop Coral L1",
+                "placeholder": ["0"],
+                "options": ["red"],
+                "id": "TeleopCoralL1"
             },
             {
                 "type": "IncrementNumberInput",
-                "text": "Teleop Amp Cycles",
-                "placeholder": [
-                    "0"
-                ],
-                "options": [
-                    "yellow"
-                ],
-                "id": "TeleopAmp"
+                "text": "Teleop Coral L2/L3",
+                "placeholder": ["0"],
+                "options": ["red"],
+                "id": "TeleopCoralL2,L3"
             },
             {
                 "type": "IncrementNumberInput",
-                "text": "Teleop/Endgame Trap Cycles",
-                "placeholder": [
-                    "0"
-                ],
-                "options": [
-                    "green"
-                ],
-                "id": "TeleopTrap"
+                "text": "Teleop Coral L4",
+                "placeholder": ["0"],
+                "options": ["red"],
+                "id": "TeleopCoralL4"
             },
             {
                 "type": "IncrementNumberInput",
-                "text": "Teleop/Endgame Passing Cycles",
-                "placeholder": [
-                    "0"
-                ],
-                "options": [
-                    "blue"
-                ],
-                "id": "TeleopPassing"
+                "text": "Processor Cycles",
+                "placeholder": ["0"],
+                "options": ["yellow"],
+                "id": "TeleopProcessor"
             },
             {
-                "type": "GenericTextArea",
-                "text": "Teleop Qualitative Notes",
-                "id": "TeleopNotes"
+                "type": "IncrementNumberInput",
+                "text": "Net Cycles",
+                "placeholder": ["0"],
+                "options": ["green"],
+                "id": "TeleopNet"
             },
             {
                 "type": "Spacing"
@@ -168,32 +146,19 @@
             },
             {
                 "type": "GenericToggle",
-                "text": "Did the robot park during endgame?",
-                "id": "Parked"
+                "text": "Did the Robot enter the barge?",
+                "id": "EnterBarge"
             },
             {
                 "type": "GenericToggle",
-                "text": "Did the robot climb onto the chain?",
-                "id": "ClimbStatus"
-            },
-            {
-                "type": "GenericToggle",
-                "text": "If the robot climbed, did it climb onto the chain with another robot (harmonized)?",
-                "id": "Harmonized"
+                "text": "Did the robot attempt to climb?",
+                "id": "AttemptClimb"
             },
             {
                 "type": "GenericDropdown",
-                "text": "How fast were they at climbing onto the chain?",
-                "options": [
-                    "Slow",
-                    "Fast"
-                ],
-                "id": "ClimbSpeed"
-            },
-            {
-                "type": "GenericTextArea",
-                "text": "Endgame Qualitative Notes",
-                "id": "EndgameNotes"
+                "text": "If they were successful, which cage did they climb on?",
+                "options": ["Shallow", "Deep"],
+                "id": "ClimbType"
             },
             {
                 "type": "Spacing"
@@ -220,47 +185,6 @@
                 "id": "DriverRating"
             },
             {
-                "type": "GenericDropdown",
-                "text": "How often did they defend against other robots?",
-                "options": [
-                    "Very Often: Spent all or almost all of their match defending against other robots.",
-                    "Often: Spent most of their match defending against other robots but also spent time scoring.",
-                    "Sometimes: Spent roughly half their match defending against other robots or defended opportunistically.",
-                    "Rarely: They focused on scoring mostly and barely defended against robots, but they did spend time defending.",
-                    "Never: They never defended against other robots throughout the entire match."
-                ],
-                "id": "DefenseTime"
-            },
-            {
-                "type": "GenericDropdown",
-                "text": "If they did defend, how good were they at defending?",
-                "options": [
-                    "Very Good: Greatly hampered the robots they were defending from scoring and often pinned them.",
-                    "Good: They hampered the robots they were defending from scoring, but they were still able to perform well.",
-                    "Okay: Their defense did have an impact on the score of the other alliance, but it wasn't notable.",
-                    "Poor: Their defense had little impact on the other alliance and hampered their own alliance at times.",
-                    "Very Poor: Their defense hampered their own alliance where they either racked up fouls or blocked their own teammates."
-                ],
-                "id": "DefenseSkill"
-            },
-            {
-                "type": "GenericDropdown",
-                "text": "If they were being defended by another robot, how good were they at avoiding the defense?",
-                "options": [
-                    "Very Good: They swerved around any robots trying to defend them and lost little scoring time to defense.",
-                    "Good: They often swerved around robots trying to defend them, however sometimes they would get caught by the defense.",
-                    "Okay: The defending robots had a notable impact on their scoring ability.",
-                    "Poor: The defending robots hampered their scoring ability and they would take a while to get past the defending robots.",
-                    "Very Poor: The defending robots were able to fully stop the robot from scoring and carrying out game tasks."
-                ],
-                "id": "CounterDefenseSkill"
-            },
-            {
-                "type": "GenericTextArea",
-                "text": "Rating Notes",
-                "id": "RatingNotes"
-            },
-            {
                 "type": "DarkButton",
                 "text": "Submit",
                 "id": "result"
@@ -274,37 +198,33 @@
                 "Alliance",
                 "DriverStation",
                 "TeamNumber",
-                "AutoSpeaker",
-                "AutoAmp",
-                "AutoCenterline",
+                "AutoCoralL1",
+                "AutoCoralL2",
+                "AutoCoralL3",
+                "AutoCoralL4",
+                "AutoProcessor",
+                "AutoNet",
                 "AutoLeave",
-                "AutoNotes",
-                "TeleopSpeaker",
-                "TeleopAmp",
-                "TeleopTrap",
-                "TeleopPassing",
-                "TeleopNotes",
-                "Parked",
-                "ClimbStatus",
-                "Harmonized",
-                "ClimbSpeed",
-                "EndgameNotes",
+                "TeleopCoralL1",
+                "TeleopCoralL2,L3",
+                "TeleopCoralL4",
+                "TeleopNet",
+                "TeleopProcessor",
+                "EnterBarge",
+                "AttemptClimb",
+                "ClimbType",
                 "Disabled",
-                "DriverRating",
-                "DefenseTime",
-                "DefenseSkill",
-                "CounterDefenseSkill",
-                "RatingNotes"
+                "DriverRating"
             ]
         }
     },
     {
-        "name": "2024 Pit Scouting App",
+        "name": "2025 Pit Scouting App",
         "description": "Team 346: Pit Scouting info",
         "components": [
             {
                 "type": "GenericHeaderOne",
-                "text": "2024 Pit Scouting App"
+                "text": "2025 Pit Scouting App"
             },
             {
                 "type": "GenericHeaderTwo",
@@ -313,24 +233,14 @@
             {
                 "type": "GenericTextInput",
                 "text": "Name",
-                "placeholder": [
-                    "karti"
-                ],
+                "placeholder": ["karti"],
                 "required": true,
                 "id": "ScoutId"
             },
             {
-                "type": "DropdownTextInput",
-                "text": "Don't put anything here",
-                "required": false,
-                "id": "MatchKey"
-            },
-            {
                 "type": "GenericTextInput",
                 "text": "Team Number",
-                "placeholder": [
-                    "346"
-                ],
+                "placeholder": ["346"],
                 "required": true,
                 "id": "TeamNumber"
             },
@@ -338,54 +248,32 @@
                 "type": "Spacing"
             },
             {
-                "type" : "GenericDropdown",
-                "text" : "Drivetrain",
-                "options" : [
-                    "Swerve", 
-                    "Mecanum",
-                    "Tank"
-                ],
-                "id" : "DriveType"
+                "type": "GenericDropdown",
+                "text": "Drivetrain",
+                "options": ["Swerve", "Mecanum", "Tank"],
+                "id": "DriveType"
             },
             {
                 "type": "GenericTextInput",
-                "text": "Swerve module", 
+                "text": "Swerve module",
                 "id": "ModuleType"
             },
             {
                 "type": "GenericDropdown",
                 "text": "Intake type",
-                "options": [
-                    "OTB",
-                    "UTB",
-                    "Source"
-                ],
+                "options": ["OTB", "UTB", "Source"],
                 "id": "Intake"
             },
             {
                 "type": "GenericDropdown",
-                "text": "Shooter", 
-                "options": [
-                    "Fixed", 
-                    "Pivoting Arm", 
-                    "Elevator"
-                ],
+                "text": "Shooter",
+                "options": ["Fixed", "Pivoting Arm", "Elevator"],
                 "id": "Shooter"
             },
             {
                 "type": "GenericTextInput",
                 "text": "Climber",
                 "id": "Climber"
-            },
-            {
-                "type": "GenericToggle", 
-                "text": "Can they trap?",
-                "id": "Trap"
-            },
-            {
-                "type": "GenericTextArea",
-                "text": "Notes",
-                "id": "Notes"
             },
             {
                 "type": "DarkButton",
@@ -402,9 +290,7 @@
                 "ModuleType",
                 "Intake",
                 "Shooter",
-                "Climber",
-                "Trap",
-                "Notes"
+                "Climber"
             ]
         }
     }
