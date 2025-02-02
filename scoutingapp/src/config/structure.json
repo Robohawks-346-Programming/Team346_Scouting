@@ -55,6 +55,11 @@
                 "text": "Auto Game Pieces"
             },
             {
+                "type": "GenericToggle",
+                "text": "Did they leave the starting zone (Black line)?",
+                "id": "AutoLeave"
+            },
+            {
                 "type": "IncrementNumberInput",
                 "text": "Auto Coral L1",
                 "placeholder": ["0"],
@@ -91,11 +96,6 @@
                 "id": "AutoNet"
             },
             {
-                "type": "GenericToggle",
-                "text": "Did they leave the starting zone (Black line)?",
-                "id": "AutoLeave"
-            },
-            {
                 "type": "Spacing"
             },
             {
@@ -111,10 +111,17 @@
             },
             {
                 "type": "IncrementNumberInput",
-                "text": "Teleop Coral L2/L3",
+                "text": "Teleop Coral L2",
                 "placeholder": ["0"],
                 "options": ["red"],
-                "id": "TeleopCoralL2,L3"
+                "id": "TeleopCoral L2"
+            },
+            {
+                "type": "IncrementNumberInput",
+                "text": "Teleop Coral L3",
+                "placeholder": ["0"],
+                "options": ["red"],
+                "id": "TeleopCoral L3"
             },
             {
                 "type": "IncrementNumberInput",
@@ -146,7 +153,7 @@
             },
             {
                 "type": "GenericToggle",
-                "text": "Did the Robot enter the barge?",
+                "text": "Did the Robot park?",
                 "id": "EnterBarge"
             },
             {
@@ -206,7 +213,8 @@
                 "AutoNet",
                 "AutoLeave",
                 "TeleopCoralL1",
-                "TeleopCoralL2,L3",
+                "TeleopCoralL2",
+                "TeleopCoralL3",
                 "TeleopCoralL4",
                 "TeleopNet",
                 "TeleopProcessor",
