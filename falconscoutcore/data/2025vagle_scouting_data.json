@@ -1,28 +1,2 @@
 [
-  {
-    "ScoutId": "Kush",
-    "MatchKey": "qm1",
-    "Alliance": "red",
-    "DriverStation": 2,
-    "TeamNumber": 346,
-    "AutoCoralL1": 0,
-    "AutoCoralL2": 0,
-    "AutoCoralL3": 0,
-    "AutoCoralL4": 0,
-    "AutoProcessor": 0,
-    "AutoNet": 0,
-    "AutoLeave": true,
-    "TeleopCoralL1": 0,
-    "TeleopCoralL2": "undefined",
-    "TeleopCoralL3": "undefined",
-    "TeleopCoralL4": 0,
-    "TeleopNet": 0,
-    "TeleopProcessor": 0,
-    "EnterBarge": false,
-    "AttemptClimb": false,
-    "ClimbType": "",
-    "Disabled": false,
-    "Defense": "",
-    "DriverRating": ""
-  }
 ]
