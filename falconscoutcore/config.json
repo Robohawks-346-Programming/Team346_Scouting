@@ -24,24 +24,28 @@
                 "AttemptClimb",
                 "ClimbType",
                 "Disabled",
+                "Defense",
                 "DriverRating"
         ],
         "qualitative_data_labels": [
             "ScoutId",
-            "TeamNumber",
-            "DriveType",
-            "ModuleType",
-            "Intake",
-            "Shooter",
-            "Climber"
+                "TeamNumber",
+                "DriveType",
+                "ModuleType",
+                "AlgaeIntake",
+                "CoralIntake",
+                "HighestCoralLevel",
+                "Processor",
+                "Net",
+                "Climber"
         ],
-        "json_file": "./data/2024rumble_scouting_data.json",
-        "qualitative_json_file": "./data/2024rumble_pit_data.json",
+        "json_file": "./data/2025vagle_scouting_data.json",
+        "qualitative_json_file": "./data/2025vagle_pit_data.json",
         "error_json": "./data/errors.json"
     },
     "repo_config": {
-        "repo": "Robohawks-346-Programming/346_2024_ScoutingData",
-        "update_json": "2024rumble_scouting_data.json",
-        "update_qualitative_json": "2024rumble_pit_data.json"
+        "repo": "Robohawks-346-Programming/Team346_2025ScoutingData",
+        "update_json": "2025vagle_scouting_data.json",
+        "update_qualitative_json": "2025vagle_pit_data.json"
     }
 }

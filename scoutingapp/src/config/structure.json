@@ -63,36 +63,42 @@
                 "type": "IncrementNumberInput",
                 "text": "Auto Coral L1",
                 "placeholder": ["0"],
+                "options": ["red"],
                 "id": "AutoCoralL1"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Auto Coral L2",
                 "placeholder": ["0"],
+                "options": ["yellow"],
                 "id": "AutoCoralL2"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Auto Coral L3",
                 "placeholder": ["0"],
+                "options": ["green"],
                 "id": "AutoCoralL3"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Auto Coral L4",
                 "placeholder": ["0"],
+                "options": ["blue"],
                 "id": "AutoCoralL4"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Auto Processor",
                 "placeholder": ["0"],
+                "options": ["red"],
                 "id": "AutoProcessor"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Auto Net",
                 "placeholder": ["0"],
+                "options": ["green"],
                 "id": "AutoNet"
             },
             {
@@ -113,28 +119,28 @@
                 "type": "IncrementNumberInput",
                 "text": "Teleop Coral L2",
                 "placeholder": ["0"],
-                "options": ["red"],
+                "options": ["yellow"],
                 "id": "TeleopCoral L2"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Teleop Coral L3",
                 "placeholder": ["0"],
-                "options": ["red"],
+                "options": ["green"],
                 "id": "TeleopCoral L3"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Teleop Coral L4",
                 "placeholder": ["0"],
-                "options": ["red"],
+                "options": ["blue"],
                 "id": "TeleopCoralL4"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Processor Cycles",
                 "placeholder": ["0"],
-                "options": ["yellow"],
+                "options": ["red"],
                 "id": "TeleopProcessor"
             },
             {
@@ -181,6 +187,18 @@
             },
             {
                 "type": "GenericDropdown",
+                "text": "How effective was their defense?",
+                "options": [
+                    "Very Fluid: Consistently defended with significant impact",
+                    "Fluid: Frequently defended and contributed effectively",
+                    "Average: Provided a moderate amount of defense",
+                    "Poor: Struggled to defend and had minimal impact",
+                    "Very Poor: Rarely or never attempted to defend"
+                ],
+                "id": "Defense"
+            },
+            {
+                "type": "GenericDropdown",
                 "text": "How fluid was their driving?",
                 "options": [
                     "Very Fluid: Swerved past obstacles and had no delays when reaching their destination.",
@@ -222,6 +240,7 @@
                 "AttemptClimb",
                 "ClimbType",
                 "Disabled",
+                "Defense",
                 "DriverRating"
             ]
         }
@@ -267,22 +286,41 @@
                 "id": "ModuleType"
             },
             {
-                "type": "GenericDropdown",
-                "text": "Intake type",
-                "options": ["OTB", "UTB", "Source"],
-                "id": "Intake"
-            },
-            {
-                "type": "GenericDropdown",
-                "text": "Shooter",
-                "options": ["Fixed", "Pivoting Arm", "Elevator"],
-                "id": "Shooter"
-            },
-            {
                 "type": "GenericTextInput",
-                "text": "Climber",
-                "id": "Climber"
+                "text": "Algae Intake type",
+                "placeholder": ["Intake type"],
+                "id": "AlgaeIntake"
             },
+            {
+                    
+                "type": "GenericTextInput",
+                "text": "Coral Intake Type",
+                "placeholder": ["Intake type"],
+                "id": "CoralIntake"
+            },
+            {
+                "type": "GenericDropdown",
+                "text": "Highest level they can score coral",
+                "options": ["L1", "L2", "L3", "L4"],
+                "id": "HighestCoralLevel"
+            },
+            {
+                "type": "GenericToggle",
+                "text": "Can they place algae in the processor?",
+                "Id": "Processor"
+            },
+            {
+                 "type": "GenericToggle",
+                 "text": "Can they place algae in the net?",
+                 "id": "Net"
+            }, 
+            {
+                "type": "GenericDropdown",
+                "text": "What climb can they do?",
+                "options": ["None", "Shallow", "Deep"],
+                "id": "Climb"
+            },
+
             {
                 "type": "DarkButton",
                 "text": "Submit",
@@ -296,8 +334,11 @@
                 "TeamNumber",
                 "DriveType",
                 "ModuleType",
-                "Intake",
-                "Shooter",
+                "AlgaeIntake",
+                "CoralIntake",
+                "HighestCoralLevel",
+                "Processor",
+                "Net",
                 "Climber"
             ]
         }
