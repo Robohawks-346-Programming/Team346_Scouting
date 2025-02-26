@@ -120,14 +120,14 @@
                 "text": "Teleop Coral L2",
                 "placeholder": ["0"],
                 "options": ["yellow"],
-                "id": "TeleopCoral L2"
+                "id": "TeleopCoralL2"
             },
             {
                 "type": "IncrementNumberInput",
                 "text": "Teleop Coral L3",
                 "placeholder": ["0"],
                 "options": ["green"],
-                "id": "TeleopCoral L3"
+                "id": "TeleopCoralL3"
             },
             {
                 "type": "IncrementNumberInput",
