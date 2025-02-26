@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "ScoutId": "Kush ",
+    "TeamNumber": 346,
+    "DriveType": "Swerve",
+    "ModuleType": "MK4I ",
+    "AlgaeIntake": "Station",
+    "CoralIntake": "Ground",
+    "HighestCoralLevel": "L4",
+    "Processor": true,
+    "Net": true,
+    "Climb": "Deep"
+  },
+  {
+    "ScoutId": "Karti",
+    "TeamNumber": 422,
+    "DriveType": "Swerve",
+    "ModuleType": "MK4",
+    "AlgaeIntake": "Ground",
+    "CoralIntake": "Ground",
+    "HighestCoralLevel": "L4",
+    "Processor": true,
+    "Net": true,
+    "Climb": "Deep"
+  }
+]

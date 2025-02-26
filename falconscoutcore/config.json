@@ -29,7 +29,7 @@
                 "DriverRating"
         ],
         "qualitative_data_labels": [
-            "ScoutId",
+                "ScoutId",
                 "TeamNumber",
                 "DriveType",
                 "ModuleType",
@@ -38,7 +38,7 @@
                 "HighestCoralLevel",
                 "Processor",
                 "Net",
-                "Climber"
+                "Climb"
         ],
         "json_file": "./data/2025vagle_scouting_data.json",
         "qualitative_json_file": "./data/2025vagle_pit_data.json",

@@ -252,7 +252,7 @@
     },
     {
         "name": "2025 Pit Scouting App",
-        "description": "Team 346: Pit Scouting info",
+        "description": "Team 346: Pit Scouting Info",
         "components": [
             {
                 "type": "GenericHeaderOne",
@@ -264,17 +264,25 @@
             },
             {
                 "type": "GenericTextInput",
-                "text": "Name",
+                "text": "Scout Name",
                 "placeholder": ["karti"],
-                "required": true,
-                "id": "ScoutId"
+                "id": "ScoutId",
+                "required": true
+            },
+            {
+                "type": "DropdownTextInput",
+                "text": "Match Key",
+                "options": ["qm"],
+                "placeholder": ["DONT PUT ANYTHING HERE!!!"],
+                "required": false,
+                "id": "MatchKey"
             },
             {
                 "type": "GenericTextInput",
                 "text": "Team Number",
                 "placeholder": ["346"],
-                "required": true,
-                "id": "TeamNumber"
+                "id": "TeamNumber",
+                "required": true
             },
             {
                 "type": "Spacing"
@@ -297,7 +305,6 @@
                 "id": "AlgaeIntake"
             },
             {
-                    
                 "type": "GenericTextInput",
                 "text": "Coral Intake Type",
                 "placeholder": ["Intake type"],
@@ -312,12 +319,12 @@
             {
                 "type": "GenericToggle",
                 "text": "Can they place algae in the processor?",
-                "Id": "Processor"
+                "id": "Processor"
             },
             {
-                 "type": "GenericToggle",
-                 "text": "Can they place algae in the net?",
-                 "id": "Net"
+                "type": "GenericToggle",
+                "text": "Can they place algae in the net?",
+                "id": "Net"
             }, 
             {
                 "type": "GenericDropdown",
@@ -325,7 +332,6 @@
                 "options": ["None", "Shallow", "Deep"],
                 "id": "Climb"
             },
-
             {
                 "type": "DarkButton",
                 "text": "Submit",
@@ -344,7 +350,7 @@
                 "HighestCoralLevel",
                 "Processor",
                 "Net",
-                "Climber"
+                "Climb"
             ]
         }
     }
