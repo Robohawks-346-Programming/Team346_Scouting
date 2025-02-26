@@ -21,7 +21,7 @@
             {
                 "type": "DropdownTextInput",
                 "text": "Match Key",
-                "options": ["qm", "qf", "sf", "f"],
+                "options": ["qm"],
                 "placeholder": ["number"],
                 "required": true,
                 "id": "MatchKey"
@@ -159,8 +159,8 @@
             },
             {
                 "type": "GenericToggle",
-                "text": "Did the Robot park?",
-                "id": "EnterBarge"
+                "text": "Did the robot park?",
+                "id": "Park"
             },
             {
                 "type": "GenericToggle",
@@ -168,10 +168,14 @@
                 "id": "AttemptClimb"
             },
             {
-                "type": "GenericDropdown",
-                "text": "If they were successful, which cage did they climb on?",
-                "options": ["Shallow", "Deep"],
-                "id": "ClimbType"
+                "type": "GenericToggle",
+                "text": "Did they climb on shallow?",
+                "id": "ShallowClimb"
+            },
+            {
+                "type": "GenericToggle",
+                "text": "Did they climb on deep?",
+                "id": "DeepClimb"
             },
             {
                 "type": "Spacing"
@@ -219,26 +223,27 @@
             "delimiter": "|",
             "order": [
                 "ScoutId",
-                "MatchKey",
                 "Alliance",
                 "DriverStation",
                 "TeamNumber",
+                "MatchKey",
+                "AutoLeave",
                 "AutoCoralL1",
                 "AutoCoralL2",
                 "AutoCoralL3",
                 "AutoCoralL4",
                 "AutoProcessor",
                 "AutoNet",
-                "AutoLeave",
                 "TeleopCoralL1",
                 "TeleopCoralL2",
                 "TeleopCoralL3",
                 "TeleopCoralL4",
-                "TeleopNet",
                 "TeleopProcessor",
-                "EnterBarge",
+                "TeleopNet",
+                "Park",
+                "ShallowClimb",
+                "DeepClimb",
                 "AttemptClimb",
-                "ClimbType",
                 "Disabled",
                 "Defense",
                 "DriverRating"
